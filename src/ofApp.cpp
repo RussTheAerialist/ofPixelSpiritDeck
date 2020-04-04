@@ -1,4 +1,5 @@
 #include "ofApp.h"
+#include <cmath>
 
 const int FONT_SIZE = 16;
 const string FONT_NAME = "Montserrat-Medium.ttf";
@@ -30,6 +31,7 @@ void ofApp::draw(){
 		ofPushMatrix();
 		shader.begin();
 		ofTranslate(BUFFER, BUFFER);
+		shader.setUniform1f("PI", M_PI);
 		shader.setUniform1f("offset", BUFFER);
 		shader.setUniform2f("screenSize", rectSize.x, rectSize.y);
 		ofDrawRectangle(0, 0, rectSize.x, rectSize.y);

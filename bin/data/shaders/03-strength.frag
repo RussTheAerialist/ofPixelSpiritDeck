@@ -2,13 +2,14 @@
 
 uniform vec2 screenSize;
 uniform float offset;
+uniform float PI;
 out vec4 outputColor;
 
 void main() {
-	float windowWidth = screenSize.x;
+	vec2 st = (gl_FragCoord.xy - offset) / screenSize;
 	float color = 0.0;
 
-	color = step(0.5, (gl_FragCoord.x - offset) / windowWidth);
+	color = step(0.5 + cos(st.y * PI) * 0.25, st.x);
 
 	outputColor = vec4(color, color, color, 1.0);
 }
