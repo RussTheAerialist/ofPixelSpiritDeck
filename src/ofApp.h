@@ -34,5 +34,4 @@ class ofApp : public ofBaseApp{
 		size_t no_shaders;
 
 		glm::vec2 rectSize;
-
 };

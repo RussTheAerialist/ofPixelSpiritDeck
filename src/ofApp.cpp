@@ -1,7 +1,7 @@
 #include "ofApp.h"
 #include <cmath>
 
-const int FONT_SIZE = 16;
+const int FONT_SIZE = 24;
 const string FONT_NAME = "Montserrat-Medium.ttf";
 const int BUFFER = 50;
 
@@ -45,6 +45,9 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+	ofColor bgStart(255, 255, 0);
+	ofColor bgEnd(0, 255, 0);
+	ofBackgroundGradient(bgStart, bgEnd, OF_GRADIENT_BAR);
 	if (valid_load) {
 		ofSetColor(255);
 		ofPushMatrix();
@@ -62,8 +65,8 @@ void ofApp::draw(){
 	}
 
 	// Write Shader Name
-	ofSetColor(255);
-	font.drawString(shader_names[selected_index], 25, (BUFFER - font.getLineHeight()) + 12.5);
+	ofSetColor(0);
+	font.drawString(shader_names[selected_index], BUFFER, (BUFFER - font.getLineHeight()) + (font.getLineHeight() / 1.5));
 
 }
 
@@ -71,6 +74,11 @@ void ofApp::draw(){
 void ofApp::keyPressed(int key){
 	switch (key) {
 		case ' ': selected_index = (selected_index + 1) % no_shaders; load_shader(); break;
+		case 's': {
+			string filename = shader_names[selected_index] + ".png";
+			ofSaveViewport(filename);
+			break;
+		}
 	}
 }
 
