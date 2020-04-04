@@ -2,7 +2,6 @@
 
 uniform vec2 screenSize;
 uniform float offset;
-uniform float PI;
 out vec4 outputColor;
 
 void main() {
