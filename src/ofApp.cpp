@@ -35,6 +35,7 @@ void ofApp::enumerate_shaders() {
 
 	std::sort(shader_names.begin(), shader_names.end());
 	no_shaders = shader_names.size();
+	selected_index = no_shaders - 1;
 }
 
 //--------------------------------------------------------------
