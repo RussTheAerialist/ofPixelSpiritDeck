@@ -11,12 +11,30 @@ void ofApp::setup(){
 		ofLog(OF_LOG_ERROR) << "Unable to load font " << FONT_NAME;
 		ofExit(1);
 	}
-	no_shaders = shader_names.size();
+
+	enumerate_shaders();
 
 	rectSize.x = ofGetWidth() - BUFFER * 2;
 	rectSize.y = ofGetHeight() - BUFFER * 2;
 
 	load_shader();
+}
+
+void ofApp::enumerate_shaders() {
+	ofLog(OF_LOG_NOTICE) << "Enumerating Shaders";
+	ofDirectory dir("./shaders");
+	dir.allowExt("frag");
+	dir.listDir();
+
+	for(size_t i =0; i < dir.size(); ++i) {
+		string name = dir.getName(i);
+		ofLog(OF_LOG_NOTICE) << "Processing Shader: " << name;
+		size_t position = name.size() - 5;
+		shader_names.push_back(name.erase(position, 5));
+	}
+
+	std::sort(shader_names.begin(), shader_names.end());
+	no_shaders = shader_names.size();
 }
 
 //--------------------------------------------------------------

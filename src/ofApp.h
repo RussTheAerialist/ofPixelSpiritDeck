@@ -23,16 +23,12 @@ class ofApp : public ofBaseApp{
 
 	private:
 	  void load_shader();
+		void enumerate_shaders();
 
 		ofShader shader;
 		ofTrueTypeFont font;
 
-		std::vector<std::string> shader_names = {
-			"00-void",
-			"01-justice",
-			"02-enlightenment",
-			"03-strength"
-		};
+		std::vector<std::string> shader_names;
 		bool valid_load = false;
 		size_t selected_index = 0;
 		size_t no_shaders;
