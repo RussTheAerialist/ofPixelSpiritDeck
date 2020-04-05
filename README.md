@@ -19,3 +19,4 @@ Practicing shaders in openframeworks.  [http://pixelspiritdeck.com] is where I g
 ![Merge](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/13-Merge.png)
 ![Hope](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/14-Hope.png)
 ![The Temple](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/15-TheTemple.png)
+![The Summit](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/16-TheSummit.png)
