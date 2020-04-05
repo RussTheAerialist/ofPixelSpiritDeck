@@ -21,4 +21,3 @@ Practicing shaders in openframeworks.  [http://pixelspiritdeck.com] is where I g
 ![The Temple](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/15-TheTemple.png)
 ![The Summit](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/16-TheSummit.png)
 ![The Diamond](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/17-TheDiamond.png)
-![The Diamond](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/17-TheDiamond.png)
