@@ -44,12 +44,13 @@ void main() {
 	float color3 = 0.0;
 
 	float t = triangle(st + vec2(0., .15));
+	float size = .4;
 
 	color += flip(
-		fill(t, .6),
+		fill(t, size),
 		flip(
-			flip(fill(t, .7), fill(t, .78)),
-			flip(fill(t, .88), fill(t, .93))
+			flip(fill(t, size + .1), fill(t, size + .18)),
+			flip(fill(t, size + .28), fill(t, size + .33))
 		)
 	);
 
