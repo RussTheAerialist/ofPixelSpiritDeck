@@ -79,6 +79,7 @@ void ofApp::keyPressed(int key){
 			ofSaveViewport(filename);
 			break;
 		}
+		case 'r': load_shader(); break;
 	}
 }
 
