@@ -15,4 +15,5 @@ Practicing shaders in openframeworks.  [http://pixelspiritdeck.com] is where I g
 ![The Moon](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/09-TheMoon.png)
 ![The Emperor](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/10-TheEmperor.png)
 ![The Hierophant](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/11-TheHierophant.png)
-![The Twoer](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/12-TheTower.png)
+![The Tower](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/12-TheTower.png)
+![The Merge](https://github.com/RussTheAerialist/ofPixelSpiritDeck/raw/master/images/13-Merge.png)
